@@ -10,11 +10,11 @@
    function refreshItems() {
       catalogWeapons = game.items
          .filter((item) => item.type === "equipment" && item.system.category === "weapon")
-         .sort((a, b) => a.name.localeCompare(b.name));
+         .sort((a, b) => a.system.price - b.system.price);
 
       characterWeapons = document.get()?.items
          ?.filter((item) => item.type === "equipment" && item.system.category === "weapon")
-         ?.sort((a, b) => a.name.localeCompare(b.name)) ?? [];
+         ?.sort((a, b) => a.system.price - b.system.price) ?? [];
    }
 
    refreshItems();
@@ -175,6 +175,15 @@
       Sin armas.
    </p>
 {/if}
+
+                  {:else if category.id === "melee"}
+            <h3 class="font-bold mb-2">
+               Armas cuerpo a cuerpo
+            </h3>
+
+            <p class="text-muted">
+               Sin armas cuerpo a cuerpo.
+            </p>
 
          {:else}
             <p class="text-muted">
