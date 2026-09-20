@@ -1,3 +1,7 @@
+import {
+   professions,
+   enhancements,
+} from "./content.js";
 export const ranks = [
    {
       name: "EDRPG.rank.pilots.harmless",
@@ -74,9 +78,19 @@ export const ranks = [
 ];
 
 export const skills = {
+
    combat: ["dodge", "energyWeapons", "fighting", "grenade", "heavyWeapons", "kineticWeapons", "meleeWeapons", "parry"],
-   intelligence: ["computer", "cultureLaw", "cyber", "medicine", "planetaryKnowledge", "science", "tactics", "trading"],
+
+   intelligence: ["computer", "cultureLaw", "cyber", "drones", "medicine", "planetaryKnowledge", "science", "tactics", "trading", "xenotech"],
+
    social: ["bargain", "bluff", "charm", "diplomacy", "gambling", "insight", "intimidate", "streetwise"],
+
    vehicle: ["navigation", "repair", "shipPiloting", "shipWeapons", "systems", "vehiclePiloting", "vehicleWeapons"],
+
    espionage: ["athletics", "perception", "security", "sleightOfHand", "stealth", "survival"],
+
+};
+export {
+   professions,
+   enhancements,
 };

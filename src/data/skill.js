@@ -1,6 +1,10 @@
 export default class EDSkill extends foundry.abstract.DataModel {
    min = 10;
 
+   get baseMin() {
+      return this.name === "xenotech" ? 0 : 10;
+   }
+
    static defineSchema() {
       return {
          learning: new foundry.data.fields.NumberField({

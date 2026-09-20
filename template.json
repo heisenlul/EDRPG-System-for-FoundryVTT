@@ -9,14 +9,18 @@
     "npcIndividual": {}
   },
   "Item": {
-    "types": [
-      "background",
-      "enhancement",
-      "karma"
-    ],
-    "templates": {},
-    "background": {},
-    "enhancement": {},
-    "karma": {}
+  "types": [
+    "background",
+    "enhancement",
+    "karma",
+    "profession",
+    "specialAbility"
+  ],
+  "templates": {},
+  "background": {},
+  "enhancement": {},
+  "karma": {},
+  "profession": {},
+  "specialAbility": {}  
   }
 }
