@@ -8,6 +8,7 @@ import ProfessionData from "./data/profession.js";
 import KarmaCapabilityData from "./data/karma.js";
 import SpecialAbilityData from "./data/specialAbility.js";
 import EnhancementData from "./data/enhancement.js";
+import EquipmentData from "./data/equipment.js";
 import EDSheetCharacter from "./sheets/character.js";
 import "../styles/index.css";
 
@@ -29,6 +30,8 @@ Hooks.once("init", async () => {
    CONFIG.Item.dataModels.background = BackgroundData;
    CONFIG.Item.dataModels.profession = ProfessionData;
    CONFIG.Item.dataModels.enhancement = EnhancementData;
+   CONFIG.Item.dataModels.equipment = EquipmentData;
+   CONFIG.Item.typeLabels.equipment = "TYPES.Item.equipment";
    CONFIG.Item.dataModels.specialAbility = SpecialAbilityData;
    CONFIG.Item.dataModels.karma = KarmaCapabilityData;
    CONFIG.Actor.dataModels.character = EDCharacter;

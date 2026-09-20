@@ -13,6 +13,7 @@
    import CharacterProfessionsTab from "../tabs/CharacterProfessionsTab.svelte";
    import CharacterEnhancementsTab from "../tabs/CharacterEnhancementsTab.svelte";
    import CharacterSpecialAbilitiesTab from "../tabs/CharacterSpecialAbilitiesTab.svelte";
+   import CharacterEquipmentTab from "../tabs/CharacterEquipmentTab.svelte";
    import CharacterCombatTab from "../tabs/CharacterCombatTab.svelte";
 
    /** @type {import('#runtime/svelte/store/fvtt/document').TJSDocument} */
@@ -251,13 +252,17 @@
          <div class="tab" data-tab="special-abilities">
             <CharacterSpecialAbilitiesTab {document} />
          </div>
-         <div class="tab" data-tab="enhancements">
+                 <div class="tab" data-tab="enhancements">
             <CharacterEnhancementsTab {document} />
          </div>
+
          <div class="tab" data-tab="combat">
-   		<CharacterCombatTab {document} />
-	</div>
-         <div class="tab" data-tab="equipment"></div>
+            <CharacterCombatTab {document} />
+         </div>
+
+         <div class="tab" data-tab="equipment">
+            <CharacterEquipmentTab {document} />
+         </div>
       </section>
    </section>
 </main>

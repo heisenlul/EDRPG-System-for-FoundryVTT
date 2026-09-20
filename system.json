@@ -2,12 +2,11 @@
   "id": "edrpg",
   "title": "Elite: Dangerous Role Playing Game",
   "description": "A space RPG set in the Elite: Dangerous universe.",
-  "version": "0.0.0",
+  "version": "0.1.2",
   "authors": [
     {
-      "name": "Bruno Marques (ElSaico)",
-      "url": "https://github.com/ElSaico",
-      "discord": "elsaico"
+      "name": "Heisenlul",
+      "url": "https://github.com/ElSaico"
     }
   ],
   "compatibility": {
@@ -15,12 +14,21 @@
     "verified": 11.315
   },
   "documentTypes": {
+
    "Item": {
+
       "background": {},
+
       "enhancement": {},
+
+      "equipment": {},
+
       "karma": {},
+
       "profession": {},
+
       "specialAbility": {}
+
    }
   },
   "esmodules": [

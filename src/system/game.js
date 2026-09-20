@@ -1,6 +1,8 @@
 import {
    professions,
    enhancements,
+   rangedWeapons,
+   createRangedWeaponItems,
 } from "./content.js";
 export const ranks = [
    {
@@ -93,4 +95,6 @@ export const skills = {
 export {
    professions,
    enhancements,
+   rangedWeapons,
+   createRangedWeaponItems,
 };
